@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", system-ui;
+}
+
+.container {
+  display: flex;
+}
+
+.projects {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #002244;
+  color: #fff;
+  height: 100vh;
+}
+
+.projects h2 {
+  margin: 20px 0;
+}
+
+.projects hr {
+  width: 90%;
+}
+
+.projects .addPj {
+  margin-top: 20px;
+  background-color: #0039a6;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.projects .addPj:hover {
+  background-color: #0f55d7;
+}
+
+.project {
+  width: 99%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f55d7;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.project .bar {
+  margin-top: 5px;
+  width: 100%;
+  background-color: #fff;
+  height: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .bar span {
+  color: #000;
+}
+
+.project .action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.action button:hover {
+  color: #002244;
+}
+
+/* Tasks */
+
+.tasks {
+  padding: 10px 20px;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0077c0;
+  color: #fff;
+}
+
+.tasks h2 {
+  font-size: 2.2rem;
+}
+
+.tasks hr {
+  width: 98%;
+  color: #002244;
+}
+
+.tasks .addTask {
+  margin-right: 30px;
+  margin-top: 10px;
+  align-self: flex-end;
+  height: 40px;
+  width: 180px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #002d72;
+}
+
+.task {
+  margin-top: 10px;
+  width: 80%;
+  background-color: #002244;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pr-prompt {
+  display: none;
+  padding: 30px;
+  border: 1px solid white;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  background-color: #324ab2;
+  width: 400px;
+  border-radius: 12px;
+}
+
+.pr-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pr-form input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+.pr-form button {
+  padding: 5px;
+  border: none;
+}
+
+.submit {
+  color: #fff;
+  background-color: #1a1f71;
+}
+
+.cancel {
+  background-color: red;
+  color: #fff;
+}
+
+.task-prompt {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #324ab2;
+  border: 1px solid white;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  outline: none;
+}
+
+.task-form label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-form input {
+  width: 500px;
+  padding: 10px;
+}
+
+.task-form textarea {
+  width: 500px;
+  height: 90px;
+  padding: 10px;
+}
+
+.task-form select {
+  padding: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.close {
+  display: none;
+}

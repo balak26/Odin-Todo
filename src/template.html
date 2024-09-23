@@ -3,9 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Todo List</title>
   </head>
   <body>
-    
+    <div class="container">
+      <div class="projects">
+        <h2>Projects</h2>
+        <hr />
+        <div class="project">
+          <div class="content">
+            <h3>Title</h3>
+            <div class="bar"><span>5%</span></div>
+          </div>
+          <div class="action">
+            <button><i class="fa-solid fa-pen-to-square"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="addPj">Add New Project</div>
+      </div>
+      <div class="tasks">
+        <h2>Title</h2>
+        <hr />
+        <button class="addTask">Add New Task</button>
+        <div class="task">
+          <h3>Task</h3>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <div class="task">
+          <h3>Task</h3>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <div class="task">
+          <h3>Task</h3>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="pr-prompt">
+      <form class="pr-form">
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Project Title ..."
+        />
+        <button class="submit">Submit</button>
+        <button class="cancel">cancel</button>
+      </form>
+    </div>
+
+    <div class="task-prompt">
+      <form class="task-form">
+        <label for="task">Task Title</label>
+        <input type="text" name="task" id="task" />
+        <label for="description">Description</label>
+        <textarea name="description" id="description"></textarea>
+        <label for="date">Due Date</label>
+        <input type="date" name="date" id="date" />
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <div class="actions">
+          <button class="submit">Submit</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
